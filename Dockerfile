@@ -6,8 +6,11 @@ RUN rm -rf /usr/share/nginx/html/* /etc/nginx/conf.d/default.conf
 # Copy custom Nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Copy static web application files
+# Copy web files to Nginx document root
 COPY . /usr/share/nginx/html/
+
+# Clean non-web files from web root
+RUN rm -f /usr/share/nginx/html/Dockerfile /usr/share/nginx/html/nginx.conf
 
 # Expose HTTP port
 EXPOSE 80
