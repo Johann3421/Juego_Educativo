@@ -40,7 +40,7 @@ docker compose up --build -d
 docker compose ps
 
 # Abrir en el navegador
-# http://localhost:80
+# http://localhost:93
 ```
 
 Para detener el contenedor:

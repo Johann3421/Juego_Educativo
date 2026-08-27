@@ -6,6 +6,6 @@ services:
     container_name: juego_educativo
     restart: unless-stopped
     ports:
-      - "80:80"
+      - "93:80"
     environment:
       - NODE_ENV=production
