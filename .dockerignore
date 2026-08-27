@@ -1,0 +1,13 @@
+.git
+.github
+.gitignore
+docker-compose.yml
+docker-compose.yaml
+compose.yml
+compose.yaml
+README.md
+Dockerfile
+nginx.conf
+.vscode
+.idea
+*.md
